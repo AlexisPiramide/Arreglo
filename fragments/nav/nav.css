@@ -1,0 +1,181 @@
+a:visited, a:hover, a:active,a:link {
+    text-decoration: none;
+    color: white;
+    align-self: center;
+}
+
+body{
+    margin:0;
+}
+
+
+nav{
+    background-color: #123A63;
+    height: 16vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Neuton';
+    padding: 20px;
+}
+
+nav > div.usuario > a,nav > div.navegador{
+    display: flex;
+}
+
+nav{
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+nav > div{
+    display: flex;
+}
+
+div:nth-child(6){
+    display: none;
+}
+
+nav > div:nth-child(1){
+    width: 2em;
+}
+
+nav > div > img:nth-child(2){
+    display: none;
+}
+
+nav > div > img:nth-child(2){
+    display: none;
+}
+
+nav > img:nth-child(7){
+    display: none;
+}
+
+nav > div > img{
+    width: 120px;
+    height: 120px;
+}
+nav > h2{
+    width: 2em;
+}
+
+/*Usuario*/
+.usuario{
+    width: 10em;
+}
+.usuario > a > img{
+    width: 80px;
+    height: 80px;
+    align-self: center;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.usuario > h2{
+    align-self: center;
+    padding-bottom: 10px;
+}
+.usuario > a:link{
+    padding-bottom: 10px;
+}
+
+
+.navegador{
+    background-color: white;
+    padding: 5px;
+    justify-content: space-between;
+    width:max-content;
+    width: 60vh;
+}
+
+.navegador > button{
+    background-color: white;    
+}
+
+.navegador > button > img:hover{
+    background-color: #123A63;   
+    border-radius: 5px;
+}
+
+.navegador > input {
+    border: none;
+    width:80vh;
+}
+.navegador button{
+    border-left: 2px solid #123A63;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.navegador img {
+    object-fit:fill;
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 999px) {
+    nav{
+        gap: 5px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    nav > div:nth-child(1) > img:nth-child(1){
+        display: none;
+    }
+    
+    nav > div > img{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .usuario {
+        display: none;
+    }
+    
+    
+    nav > h2 {
+        display: none;
+    }
+    .navegador{
+        width: 75%;
+    }
+    
+    nav > div.navegador{
+        background-color: white;
+        justify-content: space-between;
+        width:max-content;
+        gap:10px;
+    }
+    
+    .navegador > button{
+        background-color: white;    
+    }
+    
+    
+    .navegador > button > img:hover{
+        background-color: #123A63;   
+        border-radius: 5px;
+    }
+
+    .navegador > input {
+        width: 100%;
+        border: none;
+        width:max-content;
+    }
+    .navegador button{
+        border-left: 2px solid #123A63;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+    }
+    
+    .navegador img {
+        object-fit:fill;
+        width: 40px;
+        height: 40px;
+    }
+}
