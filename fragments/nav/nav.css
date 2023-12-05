@@ -1,4 +1,13 @@
-a:visited, a:hover, a:active,a:link {
+:root{
+    --primary: #123A63;
+    --secondary: #9AB1ED;
+    --vhsize: 16vh;
+    --padingbase: 10px;
+    --fontnav: 2em;
+}
+
+
+a {
     text-decoration: none;
     color: white;
     align-self: center;
@@ -10,9 +19,8 @@ body{
 
 
 nav{
-    background-color: #123A63;
+    background-color: var(--primary);
     height: 16vh;
-    color: white;
     display: flex;
     align-items: center;
     font-family: 'Neuton';
@@ -40,15 +48,7 @@ nav > div:nth-child(1){
     width: 2em;
 }
 
-nav > div > img:nth-child(2){
-    display: none;
-}
-
-nav > div > img:nth-child(2){
-    display: none;
-}
-
-nav > img:nth-child(7){
+nav > div > img:nth-child(2),nav > img:nth-child(7) {
     display: none;
 }
 
@@ -57,10 +57,9 @@ nav > div > img{
     height: 120px;
 }
 nav > h2{
-    width: 2em;
+    width: var(--fontnav);
 }
 
-/*Usuario*/
 .usuario{
     width: 10em;
 }
@@ -68,25 +67,27 @@ nav > h2{
     width: 80px;
     height: 80px;
     align-self: center;
-    padding-bottom: 10px;
-    padding-right: 10px;
+    padding: 0 var(--padingbase) var(--padingbase) 0;
+}
+
+.usuario{
+    margin-top: var(--padingbase);
 }
 
 .usuario > h2{
-    align-self: center;
-    padding-bottom: 10px;
+    align-self: flex-end;
+    margin: 0;
 }
 .usuario > a:link{
-    padding-bottom: 10px;
+    padding-bottom: var(--padingbase);
 }
-
 
 .navegador{
     background-color: white;
     padding: 5px;
     justify-content: space-between;
-    width:max-content;
-    width: 60vh;
+    max-width: 35%;
+    box-sizing: border-box;
 }
 
 .navegador > button{
@@ -94,7 +95,7 @@ nav > h2{
 }
 
 .navegador > button > img:hover{
-    background-color: #123A63;   
+    background-color: white;   
     border-radius: 5px;
 }
 
@@ -103,7 +104,7 @@ nav > h2{
     width:80vh;
 }
 .navegador button{
-    border-left: 2px solid #123A63;
+    border-left: 2px solid var(--primary);
     border-right: none;
     border-top: none;
     border-bottom: none;
@@ -116,11 +117,22 @@ nav > h2{
 }
 
 @media screen and (max-width: 999px) {
+
     nav{
-        gap: 5px;
+        height: 10vh;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-between;
+        justify-content:space-around;
+        margin: 0px;
+    }
+    
+    nav > div > img:nth-of-type(2), div:nth-child(6) {
+        display: block;
+    }
+    
+    div:nth-child(6) > img{
+        width: 120px;
+        height: 120px;
     }
 
     nav > div:nth-child(1) > img:nth-child(1){
@@ -128,8 +140,8 @@ nav > h2{
     }
     
     nav > div > img{
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
     }
     
     .usuario {
@@ -141,13 +153,14 @@ nav > h2{
         display: none;
     }
     .navegador{
-        width: 75%;
+        box-sizing: border-box;
+        width: 40vh;
+      
     }
     
     nav > div.navegador{
         background-color: white;
         justify-content: space-between;
-        width:max-content;
         gap:10px;
     }
     
