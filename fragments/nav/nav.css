@@ -20,7 +20,7 @@ body{
 
 nav{
     background-color: var(--primary);
-    height: 16vh;
+    height: 18vh;
     display: flex;
     align-items: center;
     font-family: 'Neuton';
@@ -131,8 +131,8 @@ nav > h2{
     }
     
     div:nth-child(6) > img{
-        width: 120px;
-        height: 120px;
+        width: 80px;
+        height: 80px;
     }
 
     nav > div:nth-child(1) > img:nth-child(1){
@@ -140,8 +140,8 @@ nav > h2{
     }
     
     nav > div > img{
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
     }
     
     .usuario {
@@ -158,6 +158,10 @@ nav > h2{
       
     }
     
+    nav > .logo{
+        display: none;
+    }
+
     nav > div.navegador{
         background-color: white;
         justify-content: space-between;
