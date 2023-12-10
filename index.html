@@ -8,14 +8,35 @@
     <link rel="stylesheet" href="/fragments/nav/nav.css">
     <link rel="stylesheet" href="/fragments/footer/footer.css">
     <link rel="stylesheet" href="/style/index.css">
-    <div id="navContainer"></div>
-    <script src="/fragments/CustomNav.js"></script>
-    <script src="/fragments/CustomFooter.js"></script>
-
+    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Neuton' rel='stylesheet'>
 </head>
 
 <body>
-    <custom-nav></custom-nav>
+    <nav>
+        <div>
+            <img src="/fragments/img/Logo.png" alt="">
+            <img src="/fragments/img/Menu.png" alt="">
+        </div>
+        <h2><a href="index.html">Inicio</a></h2>
+        <div class="navegador">
+            <input type="text" placeholder="">
+            <button type="submit">
+                <img src="/fragments/img/Search.png" onmouseover="this.src='/fragments/img/AlternativeSearch.png'"
+                    onmouseout="this.src='/fragments/img/Search.png'">
+            </button>
+        </div>
+        <h2><a href="eleccion2.html"> Seccion Articulos</a></h2>
+        <div class="usuario">
+            <a href="eleccion.html">
+                <img src="/fragments/img/User.png">
+                <h2>Zona<br> Usuario</h2>
+            </a>
+        </div>
+        <div class="logo">
+            <img src="/fragments/img/Logo.png" alt="">
+        </div>
+    </nav>
     
     <div class="cuerpo">
         <div class="carta">
@@ -100,7 +121,11 @@
         </div>
     </div>
 
-    <custom-footer></custom-footer>
+    <footer>
+        <a href="https://twitter.com/rickroll?lang=es"><img src="/fragments/img/Twitter.png" link></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="/fragments/img/Youtube.png" link></a>
+        <a href="https://www.facebook.com/rickroll548/?locale=es_LA"><img src="/fragments/img/Facebook.png" link></a>
+    </footer>
 </body>
 
 </html>

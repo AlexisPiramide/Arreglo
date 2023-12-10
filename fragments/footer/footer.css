@@ -5,10 +5,8 @@
     --padingbasefooter: 50px;
 }
 
-
 body{
     margin:0;
-
 }
 
 footer{
@@ -25,9 +23,22 @@ footer{
     left: 0;
     right: 0;
     z-index: 2;
+    grid-area: footer;
 }
 
 footer > a > img{
     height: 80px;
     width: 80px;
+}
+
+
+@media screen and (max-width: 999px) {
+    footer{
+        flex-direction: row;
+        height: 5vh;
+    }
+    footer > a > img{
+        height: 40px;
+        width: 40px;
+    }
 }

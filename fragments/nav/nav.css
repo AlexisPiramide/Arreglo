@@ -6,7 +6,6 @@
     --fontnav: 2em;
 }
 
-
 a {
     text-decoration: none;
     color: white;
@@ -25,6 +24,7 @@ nav{
     align-items: center;
     font-family: 'Neuton';
     padding: 20px;
+    grid-area: header;
 }
 
 nav > div.usuario > a,nav > div.navegador{
@@ -119,18 +119,21 @@ nav > h2{
 @media screen and (max-width: 999px) {
 
     nav{
-        height: 10vh;
         flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content:space-around;
+        display: flex;
+        justify-content: flex-start;
         margin: 0px;
+        gap: 50px;
+        height: 10vh;
+        padding-left: 40px;
     }
     
-    nav > div > img:nth-of-type(2), div:nth-child(6) {
+    nav > div > img:nth-of-type(2){
         display: block;
     }
     
     div:nth-child(6) > img{
+        display: block;
         width: 80px;
         height: 80px;
     }
@@ -148,13 +151,13 @@ nav > h2{
         display: none;
     }
     
-    
     nav > h2 {
         display: none;
     }
+    
     .navegador{
         box-sizing: border-box;
-        width: 40vh;
+        width: 250px;
       
     }
     
@@ -179,7 +182,7 @@ nav > h2{
     }
 
     .navegador > input {
-        width: 100%;
+        width: 100px;
         border: none;
         width:max-content;
     }
